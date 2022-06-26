@@ -1,3 +1,101 @@
-body{
-    background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.board {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  width: 380px;
+  height: 380px;
+}
+[class*="block"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: 800;
+}
+[class*="block"]:hover {
+  cursor: pointer;
+}
+
+.block1,
+.block4 {
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+.block2,
+.block5 {
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+.block3,
+.block6 {
+  border-bottom: 4px solid white;
+}
+.block7,
+.block8 {
+  border-right: 4px solid white;
+}
+
+.gamedata {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 82%;
+  left: 50%;
+  display: flex;
+  width: 400px;
+  font-size: 22px;
+  justify-content: space-around;
+  color: rgb(109, 107, 107);
+  font-weight: 500;
+}
+
+.current {
+  color: white;
+  text-shadow: 1px 1px 2px white;
+}
+
+.player1-count,
+.player2-count,
+.tie-count {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mode-data {
+  font-weight: 700;
+  color: rgb(233, 229, 229);
+  letter-spacing: 2px;
+}
+.mode-data img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  width: 30px;
+}
+.footer img:hover {
+  border: 1px dotted white;
+  border-radius: 100%;
 }

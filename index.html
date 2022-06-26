@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,43 @@
     <script src="./script.js" defer></script>
     <title>Tic-Tac-Toe</title>
 </head>
+
 <body>
-    
+    <div class="board">
+        <div class="block1" data-id="0"></div>
+        <div class="block2" data-id="1"></div>
+        <div class="block3" data-id="2"></div>
+        <div class="block4" data-id="3"></div>
+        <div class="block5" data-id="4"></div>
+        <div class="block6" data-id="5"></div>
+        <div class="block7" data-id="6"></div>
+        <div class="block8" data-id="7"></div>
+        <div class="block9" data-id="8"></div>
+
+    </div>
+
+    <div class="gamedata">
+        <div class="player-data">
+            <div class="player1 current">Player 1 - X</div>
+            <div class="player1-count">0</div>
+        </div>
+        <div class="tie-data">
+            <div class="tie">Tie</div>
+            <div class="tie-count">0</div>
+        </div>
+        <div class="player-data">
+            <div class="player2">Player 2 - O</div>
+            <div class="player2-count">0</div>
+        </div>
+        <div class="mode-data">
+            <div class="mode-img"><img src="./icons/2p.png" id="1player" alt=""></div>
+            <div class="mode-name">2P</div>
+        </div>
+    </div>
+
+    <div class="footer"><a href="https://github.com/Tribhuwan-Joshi" target="_blank">
+            <img src="./icons/github.png">
+        </a></div>
 </body>
+
 </html>
