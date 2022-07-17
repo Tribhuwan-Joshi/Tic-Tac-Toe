@@ -10,7 +10,7 @@
 //     totalSign: 0,
 //   };
 
-  
+
 
 //   let flag = false;
 //   const player1 = document.querySelector(".player1");
@@ -18,7 +18,7 @@
 //   const getCurrentSign = () => {
 //     gameData.totalSign++;
 //     flag = !flag;
-    
+
 //     if (flag) {
 //       player1.classList.remove("current");
 //       player2.classList.add("current");
@@ -158,16 +158,16 @@ const mode_img = document.querySelector('.mode-img img');
 const mode_name = document.querySelector('.mode-name');
 const mode_data = document.querySelector('.mode-data');
 let i = 0;
-mode_name.addEventListener('click', () => {
-  console.log("clicked");
-  
+mode_img.addEventListener('click', () => {
+
+
   let states = ["2P", "AI-N", "AI-H"];
-  let url = ["./icons/2p.png", "./icons/1p.png", "./icons/1p.png"];
+  let url = ["./icons/2p.png", "./icons/AIN.png", "./icons/AIH.png"];
   return function () {
     console.log(i);
     i = ++i % states.length;
     mode_img.setAttribute('src', url[i]);
     mode_name.textContent = states[i];
-    
+
   }()
 });
